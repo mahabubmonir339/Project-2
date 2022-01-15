@@ -111,7 +111,9 @@ h1{
     height: 300px;
 }
 .personal img{
+    background-color: white;
     border-radius: 10px;
+    box-shadow: 1px 1px 10px;
 }
 /* ----section--4th---footer--------- */
 /* .footer-container{
