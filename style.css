@@ -1,0 +1,180 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+}
+
+/* -------section--camera-section-1st------------ */
+
+.camera-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+}
+.camera-section{
+    width: 400px;
+    height: 400px;
+    margin: 100px 100px;
+}
+.camera-section img{
+    border: 2px solid white;
+    border-radius: 50%;
+
+}
+
+.button{
+    background-color: #0067b8;
+    text-align: center;
+    font-size: 20px;
+    height: 35px;
+    width: 10em;
+    border-radius: 8px;
+    
+}
+a{
+    text-decoration: none;
+    color: #0067b8;
+   
+}
+
+/* -------section----Popular Collection- 2nd---------- */
+.popular-container{
+    display: grid;
+    justify-content: space-around;
+    align-content: center;
+}
+
+h1{
+    text-align: center;
+}
+
+.Popular-Collection-Part{
+    font-size: 13px;
+    background-color: white;
+    width: 329px;
+    height: 476px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 40px;
+
+}
+.Popular-Collection{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    /* justify-content: space-around; */
+    /* align-content: center; */
+    grid-column-gap: 30px;
+    grid-row-gap: 25px;
+
+}
+.Popular-Collection-info{
+    margin: 10px 14px;
+}
+
+
+.dollar{
+    font-family: 'Nunito', sans-serif;
+}
+
+.fas.fa-star.star-color{
+    color: rgb(233, 233, 106);
+}
+.fas.fa-star.star-noncolor{
+    color: rgb(216, 213, 213);
+}
+
+/* ----------see more---------- */
+.seemore{
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+/* ------section---parsonal-create-3rd-------------- */
+.personal-container{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
+}
+.personal-create{
+    width: 1200px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.personal{
+    width: 350px;
+    height: 300px;
+}
+.personal img{
+    border-radius: 10px;
+}
+/* ----section--4th---footer--------- */
+/* .footer-container{
+
+} */
+footer{
+    background-color: #88c1ec;
+    text-align: center;
+    margin-top: 70px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+/* --------------------------
+---media query------------
+-------------------------- */
+
+
+
+/* phone  */
+
+@media only screen and (max-width:688px) {
+    html,
+    body {
+        overflow-x: hidden;
+        max-width: 100%;
+        scroll-behavior: smooth;
+    }
+    .camera-container{
+        width: 100%;
+    }
+    .camera-section {
+        flex-direction: column;
+    }
+    .Popular-Collection .personal{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+
+}
+
+
+/* tablet phone  */
+
+@media only screen and (max-width:1023px) {
+    html,
+    body {
+        overflow-x: hidden;
+        max-width: 100%;
+        scroll-behavior: smooth;
+    }
+    .camera-container{
+        width: 100%;
+    }
+    .camera-section{
+        flex-direction: column;
+    }
+    .Popular-Collection {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+    
+}
